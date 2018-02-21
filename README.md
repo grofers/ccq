@@ -41,7 +41,7 @@ Each task is also passed a `callback(error, results)` function as its last argum
 
 ```javascript
 // adds a new `uploadFile` task to the queue
-queue.add(uploadFile, [files[i]], onUpload);
+queue.add(uploadFile, files[i]);
 ```
 
 #### `queue.await(callback);`
