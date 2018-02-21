@@ -13,7 +13,7 @@ You can think of a controlled-concurrency queue as an array of tasks with a posi
 This constructor function creates a new queue with a concurrency of `n`. You may add as many tasks to the queue as needed, but no more than `n` of these tasks are allowed to execute concurrently at any given time. If no `n` is passed, we get a queue with unbounded concurrency.
 
 ```javascript
-var Queue = require("queue").Queue;
+var Queue = require("ccq").Queue;
 
 // creates a new queue with a concurrency of 5
 var q = new Queue(5);

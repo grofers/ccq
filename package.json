@@ -1,7 +1,7 @@
 {
-  "name": "cq",
+  "name": "ccq",
   "version": "0.1.0",
-  "description": "Javascript queues with concurrency control",
+  "description": "Javascript queues with concurrency control!",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grofers/cq.git"
+    "url": "git+https://github.com/grofers/ccq.git"
   },
   "keywords": [
     "concurrency",
