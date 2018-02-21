@@ -8,7 +8,7 @@ You can think of a controlled-concurrency queue as an array of tasks with a posi
 
 ### Installation
 
-If you use NPM, use `npm install ccq`. Otherwise, download the latest release. AMD, CommonJS, and vanilla environments are supported. In vanilla, a d3 global is exported:
+If you use NPM, use `npm install ccq`. Otherwise, download the latest release. AMD, CommonJS, and vanilla environments are supported. In vanilla, a `Queue` global is exported:
 
 ```html
 <script src="https://github.com/grofers/ccq/releases/download/v0.1.0/ccq-0.1.0.min.js"></script>
