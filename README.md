@@ -1,4 +1,7 @@
 # ccq
+
+[![Build Status](https://travis-ci.org/grofers/ccq.svg?branch=master)](https://travis-ci.org/grofers/ccq)
+
 **Javascript queues with concurrency control!**
 
 You can think of a controlled-concurrency queue as an array of tasks with a positive concurrency *n*, which means that at any given time, at most *n* of the queued tasks are being executed concurrently, while the rest are either waiting to commence execution, or have finished executing.
