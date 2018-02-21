@@ -11,13 +11,11 @@ You can think of a controlled-concurrency queue as an array of tasks with a posi
 If you use NPM, use `npm install ccq`. Otherwise, download the latest release. AMD, CommonJS, and vanilla environments are supported. In vanilla, a d3 global is exported:
 
 ```html
-<script src="https://d3js.org/d3-queue.v3.min.js"></script>
+<script src="https://github.com/grofers/ccq/releases/download/v0.1.0/ccq-0.1.0.min.js"></script>
 <script>
-```
-
-var q = d3.queue();
-
+    var queue = new Queue();
 </script>
+```
 
 [Try **ccq** in your browser](https://npm.runkit.com/ccq)
 
