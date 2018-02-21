@@ -6,6 +6,21 @@
 
 You can think of a controlled-concurrency queue as an array of tasks with a positive concurrency *n*, which means that at any given time, at most *n* of the queued tasks are being executed concurrently, while the rest are either waiting to commence execution, or have finished executing.
 
+### Installation
+
+If you use NPM, use `npm install ccq`. Otherwise, download the latest release. AMD, CommonJS, and vanilla environments are supported. In vanilla, a d3 global is exported:
+
+```html
+<script src="https://d3js.org/d3-queue.v3.min.js"></script>
+<script>
+```
+
+var q = d3.queue();
+
+</script>
+
+[Try **ccq** in your browser](https://npm.runkit.com/ccq)
+
 ### The Queue API
 
 #### `var queue = new Queue(n);`
@@ -13,7 +28,7 @@ You can think of a controlled-concurrency queue as an array of tasks with a posi
 This constructor function creates a new queue with a concurrency of `n`. You may add as many tasks to the queue as needed, but no more than `n` of these tasks are allowed to execute concurrently at any given time. If no `n` is passed, we get a queue with unbounded concurrency.
 
 ```javascript
-var Queue = require("queue").Queue;
+var Queue = require("ccq").Queue;
 
 // creates a new queue with a concurrency of 5
 var q = new Queue(5);
@@ -39,6 +54,10 @@ Finally, the `await()` method can be used to tell the queue that no further task
 // the callback passed to `.await()` will be invoked once all the tasks have finished
 queue.await(function(results) {
     var failedUploads = results.filter(function (result) { return result.isError; });
-    console.log('Finished uploading. ' + results.length - failedUploads.length + ' successful, ' + failedUploads.length + ' failed.');
+    console.log(
+        'Finished uploading. '
+        + (results.length - failedUploads.length) + ' successful, '
+        + failedUploads.length + ' failed.'
+    );
 });
 ```
