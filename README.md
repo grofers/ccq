@@ -6,7 +6,7 @@
 
 You can think of a controlled-concurrency queue as an array of tasks with a positive concurrency *n*, which means that at any given time, at most *n* of the queued tasks are being executed concurrently, while the rest are either waiting to commence execution, or have finished executing.
 
-### Installation
+## Installation
 
 If you use NPM, use `npm install ccq`. Otherwise, download the latest release. AMD, CommonJS, and vanilla environments are supported. In vanilla, a `Queue` global is exported:
 
@@ -17,9 +17,9 @@ If you use NPM, use `npm install ccq`. Otherwise, download the latest release. A
 </script>
 ```
 
-[Try **ccq** in your browser](https://npm.runkit.com/ccq)
+[Try **ccq** in your browser](https://npm.runkit.com/ccq) or take a look at the demo at [https://bl.ocks.org/cdax/2d694bcef87643fdee747734c4d97b1b](https://bl.ocks.org/cdax/2d694bcef87643fdee747734c4d97b1b)
 
-### The Queue API
+## The Queue API
 
 #### `var queue = new Queue(n);`
 
