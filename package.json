@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "build": "rm -rf build/ && mkdir build/ && uglifyjs index.js -c -m -o build/ccq.min.js",
+    "build": "rm -rf build/ && mkdir build/ && uglifyjs index.js -c -m -o build/ccq.min.js"
   },
   "repository": {
     "type": "git",
